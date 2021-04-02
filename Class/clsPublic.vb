@@ -1,12 +1,14 @@
 ﻿Imports System.Data.OleDb
 Public Class clsPublic
     Public Shared Function FileAccess() As OleDbConnection
+        'for ms access up to 2010
         Dim connectionString As String =
                   "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" &
                   Application.StartupPath & "\qrcode.mdb;Jet OLEDB:Database Password="
         ';Extended Properties=Text;HDR=YES;FMT=Delimeted;IMEX=1;Database Password=" & _
         'My.Settings.Local_DB.ToString.Trim & ""
 
+        ' for ms access from 2010 to new release
         'Dim ConnectionString As String =
         '    "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" &
         '    Application.StartupPath &
