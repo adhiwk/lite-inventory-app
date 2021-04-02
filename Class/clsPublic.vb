@@ -3,7 +3,7 @@ Public Class clsPublic
     Public Shared Function FileAccess() As OleDbConnection
         Dim connectionString As String =
                   "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" &
-                  Application.StartupPath & "\qrcode.mdb;Jet OLEDB:Database Password=Masuk123!@#"
+                  Application.StartupPath & "\qrcode.mdb;Jet OLEDB:Database Password="
         ';Extended Properties=Text;HDR=YES;FMT=Delimeted;IMEX=1;Database Password=" & _
         'My.Settings.Local_DB.ToString.Trim & ""
 
